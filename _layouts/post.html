@@ -1,85 +1,94 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
     {% include head.html %}
-	</head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- HEADER IMAGE -->
+    <!-- <center>
+        <span class="main-header-image">
+            <a href="/"><img src="/images/header/clean-and-simple-header.jpg"></a>
+        </span>
+    </center> -->
+    <br>
+    <center>
+        <span class="main-header-image">
+            <h1 style="font-weight:100; font-kerning:normal"><a href="/">{{ site.title }}</a></h1>
+        </span>
+    </center>
 
-				<!-- Header -->
-        <header id="header">
-          <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-        </header>
+    <!-- NAVIGATION -->
+    <br>
+    {% include navigation.html %}
+</head>
 
-				<!-- Nav -->
-					<nav id="nav">
+<!-- BODY -->
+<body id="post-index">
+    {% include browser-upgrade.html %}
 
-            {% include nav.html %}
-						
-					</nav>
+    <div id="main" role="main">
+        <article class="hentry">
 
-				<!-- Main -->
-				<div id="main">
-          <section class="post">
-    				<header class="major">
-      				<span class="date">{{page.date | date_to_string}}</span>
-      				<h1>{{page.title}}</h1>
-      				<p>{{page.excerpt}}</p>
-      			</header>
-      			<div class="image main"><img src="{{page.image}}" alt=""></div>
-      			<p>{{content}}</p>
-      		</section>
+            <div class="featured-image">
+            <img src="{{ page.featured-image}}" style="width:100%">
+            <div class="green-bar"></div>
+            </div>
 
-          <div class="comments-wrapper">
-          <div id="disqus_thread"></div>
-          <script>
-              /**
-               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-               */
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>{{ page.title }}</a>
+            </h1>
+            <h3 class="entry-subtitle">
+                <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ page.subtitle }}</a>
+            </h3>
 
-              var disqus_config = function () {
-                  this.page.url = '{{ absolute_url }}{{ page.url }}';  /*Replace PAGE_URL with your page's canonical URL variable*/
-                  this.page.identifier = '{{ page.url }}'; /*Replace PAGE_IDENTIFIER with your page's unique identifier variable*/
-              };
+            <hr>
 
-              (function() {  /* dont endit below this line */
-                  var d = document, s = d.createElement('script');
+            {% if page.play-now-link != nil %}
+            <div style="text-align: center">
+                <a href="{{ page.play-now-link }}">Play now!</a>
+            </div>
+            {% endif %}
 
-                  s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                {{ page.content }}
+            </div>
 
-                  s.setAttribute('data-timestamp', +new Date());
-                  (d.head || d.body).appendChild(s);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div><!-- /.comments-wrapper -->
+            <!--- DIVIDING LINE -->
+            <hr>
 
+            <!-- POST DATE -->
+            <div class="post-date" style="clear:both">
+                    {{ page.date-string }}
+            </div>
 
-					<!-- Footer -->
-						<footer>
-              <ul class="actions">
-                <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-              </ul>
-						</footer>
-					</div>
+            <br>
+            
+            <!-- POST TAGS (only shown if a post has them) -->
+            {% if page.tags != empty %} 
+                <p>Tags:</p>
+                <div class="inline-tags">
+                    <span>
+                        {% for tag in page.tags %}
+                            <a href="/tags/#{{tag}}">{{ tag }}&nbsp;&nbsp;&nbsp;</a>
+                        {% endfor %}
+                    </span>
+                </div>
+            {% endif %}
+        </article>
+    </div>
+</body>
 
-				<!-- Footer -->
-        {% include foot.html %}
-
-			</div>
-
-      <!-- Scripts -->
-  		{% include scripts-main.html %}
-			{% include tracking.html %}
-
-	</body>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            {% include footer.html %}
+        </footer>
+    </div>
+</footer>
 </html>

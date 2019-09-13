@@ -1,21 +1,23 @@
 <center>
-    <nav class="header-nav">
-        <ul class="navigation-bar">
-            <li><a href="/">HOME</a></li>
-            <li>
-                <div class="dropdown" id="dropdown" style="transition: all 0.2s ease;">OUR STUFF
-                    <div class="dropdown-content">
-                        <a href="{{ '/AwesomeSoccer/' | prepend: site.baseurl }}" class="dropdown-text">Awesome Soccer</a>
-                        <a href="{{ '/stuff/' | prepend: site.baseurl }}" class="dropdown-text">View all</a>
+    <div class="nav-bg">
+        <nav class="header-nav">
+            <ul class="navigation-bar">
+                <li><a href="/">HOME</a></li>
+                <li>
+                    <div class="dropdown" id="dropdown" style="transition: all 0.2s ease;">OUR STUFF
+                        <div class="dropdown-content">
+                            <a href="{{ '/AwesomeSoccer/' | prepend: site.baseurl }}" class="dropdown-text">Awesome Soccer</a>
+                            <a href="{{ '/stuff/' | prepend: site.baseurl }}" class="dropdown-text">View all</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <!-- <li><a href="/archives/">ARCHIVE</a></li> -->
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/tags/">ARCHIVE</a></li>
-            <!-- <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li> -->
-        </ul>
-    </nav>
+                </li>
+                <!-- <li><a href="/archives/">ARCHIVE</a></li> -->
+                <li><a href="/about/">ABOUT</a></li>
+                <li><a href="/tags/">ARCHIVE</a></li>
+                <!-- <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li> -->
+            </ul>
+        </nav>
+    </div>
 </center>
 <script>
     document.getElementById("dropdown").onclick = function() {document.location.href = "{{ '/stuff/' | prepend: site.baseurl }}";};

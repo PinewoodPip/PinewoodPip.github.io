@@ -58,12 +58,25 @@
 .post-preview-image {
 	max-width: 450px;
 	max-height: 222px;
+	border: 2px darkgreen solid;
 }
 
 .entry-excerpt { // possibly doesnt do anything
 	float: left;
 	min-height: 10px;
-	// min-width: 700px;
+}
+
+/* .truncate { //not working
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	max-width: 395px;
+} */
+
+.truncate {
+	overflow: hidden;
+	height: 200px;
 }
 
 .green-bar {
@@ -103,6 +116,13 @@
 
 .dropdown:hover {
 	color: lighten($base-color,60);
+}
+
+/*--- ARCHIVE ---------------------------------------------------------------*/
+
+.archive-article {
+	padding: 0;
+	margin: 0;
 }
 
 /*--- ABOUT -----------------------------------------------------------------*/

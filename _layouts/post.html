@@ -58,9 +58,11 @@
             <hr>
 
             <!-- POST DATE -->
+            {% unless post.categories contains 'projects' %}
             <div class="post-date" style="clear:both">
                     {{ page.date-string }}
             </div>
+            {% endunless %}
 
             <br>
             

@@ -4,9 +4,9 @@ categories: [projects]
 title: Awesome Soccer
 subtitle:
 author:
-featured-image: /images/testing/test_kaer_morhen.jpg
+featured-image: /images/projects/awesome_soccer_banner.png
 tags: []
-date-string: SEPTEMBER 13, 2019
+date-string:
 play-now-link: https://pinewood.team/AwesomeSoccer
 project-desc: A simple soccer simulation game which aims to streamline matches through abstraction to create exciting gameplay where everyone, even losers, are winners.
 ---
@@ -24,4 +24,8 @@ Features some features ported from Awesome Soccer Remastered, the 2018 remake of
 - Customize your experience further with unlockable background colors
 - Track your play stats and level up indefinitely
 
-What are you waiting for? Epic matches await you!
+What are you waiting for? [Epic matches await you!](https://pinewood.team/AwesomeSoccer)
+
+Developer highscores:<br>
+Highest win streak: **19** by wFridge<br>
+Highest lose streak: **15** by Pip

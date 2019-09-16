@@ -52,6 +52,7 @@ layout: post-index
     <!-- <br> -->
     
     <!-- POST DATE -->
+    {% unless post.categories contains 'projects' %}
     <div class="post-date">
         <span class="entry-date date published updated" style="display: flex; width: 100%;">
             {% if post.author == nil %}
@@ -67,6 +68,7 @@ layout: post-index
             {% endif %}
         </span>
     </div>
+    {% endunless %}
     
 </article>
 {% endfor %}

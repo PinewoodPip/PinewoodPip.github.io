@@ -9,10 +9,18 @@
 
 .title-bg {
 	background-color: $body-color;
-	height: 70px;
-	line-height: 70px;
-	width: 370px;
+	height: 75px;
+	line-height: 75px;
+	width: 450px;
 	border-radius: 3px;
+}
+
+.title-icon {
+	display: block;
+	width: 64px;
+	height: auto;
+	padding-right: 15px;
+	image-rendering: pixelated;
 }
 
 #title-bg-alt {

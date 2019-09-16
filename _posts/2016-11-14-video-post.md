@@ -4,6 +4,7 @@ categories: posts
 title: A Video Post
 tags: [sample post, video]
 date-string: NOVEMBER 14, 2016
+desc: Video embeds are responsive and scale with the width of the main content block with the help of FitVids.
 ---
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EqAnYPiZiNA" frameborder="0" allowfullscreen></iframe>

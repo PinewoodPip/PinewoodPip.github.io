@@ -23,3 +23,5 @@ Features some features ported from Awesome Soccer Remastered, the 2018 remake of
 - Obtain unique new balls through lootboxes to achieve a sense of pride and accomplishment
 - Customize your experience further with unlockable background colors
 - Track your play stats and level up indefinitely
+
+What are you waiting for? Epic matches await you!

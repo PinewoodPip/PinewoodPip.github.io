@@ -25,10 +25,12 @@ layout: post-index
             <h3 class="entry-subtitle">
                 <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.subtitle }}</a>
             </h3>
-            {% if post.project-desc == nil %}
-            <p class="entry-excerpt">{{post.excerpt}}</p>
+            {% if post.desc != nil %}
+            <p class="entry-excerpt truncate fade fade-bottom">{{post.desc}}</p>
+            {% elsif post.project-desc != nil %}
+            <p class="entry-excerpt truncate fade fade-bottom">{{post.project-desc}}</p>
             {% else %}
-            <p class="entry-excerpt">{{post.project-desc}}</p>
+            <p class="entry-excerpt truncate fade fade-bottom">{{post.excerpt}}</p>
             {% endif %}
         </header>
     </div>

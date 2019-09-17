@@ -1,74 +1,16 @@
 ---
 layout: post-index
 ---
-{% for post in paginator.posts %}
-{% unless post.categories contains 'projects' %} <!-- do not include project pages in the home page -->
-<article>
-    <!-- POST FEATURED IMAGE -->
-    <div style="display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: stretch; height: 222px; flex-shrink: 1">
-        <div class="post-preview-image-container" style="position: relative;">
-            <a href="{{ site.url }}{{ post.url }}">
-                <img src="{{ post.featured-image}}" class="post-preview-image">
-            </a>
-            {% if post.play-now-link != nil %}
-            <div class="play-now-banner">
-                <a id="play-now-text" href="{{ post.play-now-link }}">Play now!</a>
-            </div>
-            {% endif %}
-        </div>
+{% assign posts-shown = 0 %}
+{% assign max-posts-shown = 5 %}
 
-        <!-- POST TITLE -->
-        <header style="width: 50%;">
-            <h1 class="entry-title" style="padding-top: 0px; margin-top: 0px;">
-                <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
-            </h1>
-            <h3 class="entry-subtitle">
-                <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.subtitle }}</a>
-            </h3>
-            {% if post.desc != nil %}
-            <p class="entry-excerpt truncate fade fade-bottom">{{post.desc}}</p>
-            {% elsif post.project-desc != nil %}
-            <p class="entry-excerpt truncate fade fade-bottom">{{post.project-desc}}</p>
-            {% else %}
-            <p class="entry-excerpt truncate fade fade-bottom">{{post.excerpt}}</p>
-            {% endif %}
-        </header>
-    </div>
-    
-    <a href="{{ post.url }}"><i>Read more...</i></a>
-    <!--- DIVIDING LINE -->
-    <hr style="clear: both">
-    
-    <!-- POST TAGS -->
-    <!-- <div class="inline-tags">
-        <span>
-        {% for tag in post.tags %}
-            <a href="/tags/#{{tag}}">#{{ tag }}&nbsp;&nbsp;&nbsp;</a>
-        {% endfor %}
-        </span>
-    </div> -->
-    
-    <!-- <br> -->
-    
-    <!-- POST DATE -->
-    <div class="post-date">
-        <span class="entry-date date published updated" style="display: flex; width: 100%;">
-            {% if post.author == nil %}
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-                <a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
-            </time>
-            {% else %}
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-                <a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }} --- by {{ post.author }}</a>
-            </time>
-            <!-- <a href="{{ site.url }}{{ post.url }}" style="margin-left: 10px; margin-bottom: 0px; margin-right: 10px;"> --- </a>
-            <a href="{{ site.url }}{{ post.url }}">by {{post.author}}</a> -->
-            {% endif %}
-        </span>
-    </div>
-    
-</article>
-{% endunless %}
+{% for post in site.posts %}
+    {% if posts-shown < max-posts-shown %}
+        {% unless post.categories contains 'projects' or post.categories contains 'other-projects' %} <!-- do not include project pages in the home page -->
+            {% include home-article-indexing.html post=post %}
+            {% increment posts-shown %}
+        {% endunless %}
+    {% endif %}
 {% endfor %}
 
 <div class="pagination">

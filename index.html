@@ -1,16 +1,9 @@
 ---
 layout: post-index
 ---
-{% assign posts-shown = 0 %}
-{% assign max-posts-shown = 5 %}
 
-{% for post in site.posts %}
-    {% if posts-shown < max-posts-shown %}
-        {% unless post.categories contains 'projects' or post.categories contains 'other-projects' %} <!-- do not include project pages in the home page -->
-            {% include home-article-indexing.html post=post %}
-            {% increment posts-shown %}
-        {% endunless %}
-    {% endif %}
+{% for post in paginator.posts %}
+        {% include home-article-indexing.html post=post %}
 {% endfor %}
 
 <div class="pagination">

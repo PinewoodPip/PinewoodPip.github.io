@@ -2,6 +2,7 @@
 layout: post
 categories: [other-projects]
 title: test other project post
+hidden: true
 subtitle:
 author:
 featured-image: /images/temp.png

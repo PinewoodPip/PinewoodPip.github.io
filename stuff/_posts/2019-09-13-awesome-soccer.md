@@ -2,6 +2,7 @@
 layout: post
 categories: [projects]
 title: Awesome Soccer
+hidden: true
 subtitle:
 author:
 featured-image: /images/projects/awesome_soccer_banner.png

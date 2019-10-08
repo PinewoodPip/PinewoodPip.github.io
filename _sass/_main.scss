@@ -61,6 +61,10 @@
 	border: 2px darkgreen solid;
 }
 
+.post-preview-image-link:hover {
+	opacity: 0.9;
+}
+
 .entry-excerpt { // possibly doesnt do anything
 	float: left;
 	min-height: 10px;
@@ -118,6 +122,31 @@
 .dropdown:hover {
 	color: lighten($base-color,60);
 }
+
+/*--- SCREENSHOTS -----------------------------------------------------------*/
+
+.screenshots-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px gray solid;
+	background-color: #ccc;
+}
+
+.screenshot {
+	max-height: 200px;
+	margin: 5px;
+	-webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.screenshot:hover {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25) perspective(1px);
+}
+	
 
 /*--- ARCHIVE ---------------------------------------------------------------*/
 
@@ -497,7 +526,7 @@ header .entry-meta {
        
         a { 
             img:hover {
-                opacity: 0.9;
+                opacity: 1; // was 0.9
             }
         }
 

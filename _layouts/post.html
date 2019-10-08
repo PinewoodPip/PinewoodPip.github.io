@@ -54,6 +54,19 @@
                 {{ page.content }}
             </div>
 
+            <!-- SCREENSHOTS SECTION -->
+            {% if page.screenshots != empty and page.screenshots != nil %}
+            <div class="screenshots-container">
+                {% for screenshot in page.screenshots %}
+                <div>
+                    <a href="{{ site.url }}{{ screenshot }}">
+                        <img src="{{screenshot}}" class="screenshot">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
             <!--- DIVIDING LINE -->
             <hr>
 

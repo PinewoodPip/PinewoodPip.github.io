@@ -3,7 +3,7 @@
     <!-- POST FEATURED IMAGE -->
     <div style="display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: stretch; height: 222px; flex-shrink: 1">
         <div class="post-preview-image-container" style="position: relative;">
-            <a href="{{ site.url }}{{ post.url }}">
+            <a href="{{ site.url }}{{ post.url }}" class="post-preview-image-link">
                 <img src="{{ post.featured-image}}" class="post-preview-image">
             </a>
             {% if post.play-now-link != nil %}

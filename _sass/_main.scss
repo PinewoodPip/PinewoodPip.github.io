@@ -9,10 +9,18 @@
 
 .title-bg {
 	background-color: $body-color;
-	height: 70px;
-	line-height: 70px;
-	width: 370px;
+	height: 75px;
+	line-height: 75px;
+	width: 450px;
 	border-radius: 3px;
+}
+
+.title-icon {
+	display: block;
+	width: 64px;
+	height: auto;
+	padding-right: 15px;
+	image-rendering: pixelated;
 }
 
 #title-bg-alt {
@@ -50,12 +58,30 @@
 .post-preview-image {
 	max-width: 450px;
 	max-height: 222px;
+	border: 2px darkgreen solid;
+}
+
+.post-preview-image-link:hover {
+	opacity: 0.9;
 }
 
 .entry-excerpt { // possibly doesnt do anything
 	float: left;
 	min-height: 10px;
-	// min-width: 700px;
+	padding-right: 10px;
+}
+
+/* .truncate { //not working
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	max-width: 395px;
+} */
+
+.truncate {
+	overflow: hidden;
+	height: 200px;
 }
 
 .green-bar {
@@ -95,6 +121,38 @@
 
 .dropdown:hover {
 	color: lighten($base-color,60);
+}
+
+/*--- SCREENSHOTS -----------------------------------------------------------*/
+
+.screenshots-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px gray solid;
+	background-color: #ccc;
+}
+
+.screenshot {
+	max-height: 200px;
+	margin: 5px;
+	-webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.screenshot:hover {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25) perspective(1px);
+}
+	
+
+/*--- ARCHIVE ---------------------------------------------------------------*/
+
+.archive-article {
+	padding: 0;
+	margin: 0;
 }
 
 /*--- ABOUT -----------------------------------------------------------------*/
@@ -468,7 +526,7 @@ header .entry-meta {
        
         a { 
             img:hover {
-                opacity: 0.9;
+                opacity: 1; // was 0.9
             }
         }
 

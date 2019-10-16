@@ -9,6 +9,7 @@ featured-image: /images/projects/awesome_soccer_banner.png
 tags: []
 date-string:
 play-now-link: https://pinewood.team/AwesomeSoccer
+play-now-text: Play now!
 project-desc: A simple soccer simulation game which aims to streamline matches through abstraction to create exciting gameplay where everyone, even losers, are winners.
 ---
 

@@ -8,14 +8,14 @@
             </a>
             {% if post.play-now-link != nil %}
             <div class="play-now-banner">
-                <a id="play-now-text" href="{{ post.play-now-link }}">Play now!</a>
+                <a id="play-now-text" href="{{ post.play-now-link }}">{{post.play-now-text}}</a>
             </div>
             {% endif %}
         </div>
 
         <!-- POST TITLE -->
         <header style="width: 50%;">
-            <h1 class="entry-title" style="padding-top: 0px; margin-top: 0px;">
+            <h1 class="entry-title short-title" style="padding-top: 0px; margin-top: 0px;">
                 <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
             </h1>
             <h3 class="entry-subtitle">

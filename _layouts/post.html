@@ -57,12 +57,24 @@
             <!-- SCREENSHOTS SECTION -->
             {% if page.screenshots != empty and page.screenshots != nil %}
             <h3 class="centered-text">Screenshots</h3>
-            <div class="screenshots-container">
+            <div class="screenshots-container" style="margin-bottom: 5px;">
+                <a href="" id="large_screenshot_link">
+                    <img src="" class="screenshot-large" id="large_screenshot">
+                </a>
+            </div>
+            <script>
+                function changeFeaturedScreenshot(newSrc) {
+                    document.getElementById("large_screenshot").setAttribute("src", newSrc);
+                    document.getElementById("large_screenshot_link").setAttribute("href", "{{ site.url }}"+newSrc);
+                }
+                changeFeaturedScreenshot('{{ page.screenshots[0] }}')
+            </script>
+            <div class="screenshots-container" style="border-color: transparent;">
                 {% for screenshot in page.screenshots %}
-                <div>
-                    <a href="{{ site.url }}{{ screenshot }}">
+                <div> <!--href="{{ site.url }}{{ screenshot }}"-->
+                    <div onmouseover="changeFeaturedScreenshot('{{ screenshot }}')">
                         <img src="{{screenshot}}" class="screenshot">
-                    </a>
+                    </div>
                 </div>
                 {% endfor %}
             </div>

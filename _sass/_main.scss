@@ -133,17 +133,24 @@
 }
 
 .screenshot {
-	max-height: 200px;
+	max-height: 100px;
 	margin: 5px;
-	-webkit-transition-duration: 0.1s;
+	/* -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
     -webkit-transition-property: transform;
-    transition-property: transform;
+    transition-property: transform; */
+}
+
+.screenshot-large {
+	min-height: 415px;
+	max-height: 415px;
+	margin: 5px;
 }
 
 .screenshot:hover {
-	-webkit-transform: scale(1.25);
-	transform: scale(1.25) perspective(1px);
+	outline: 4px solid rgb(53, 99, 52);
+	/* -webkit-transform: scale(1.25);
+	transform: scale(1.25) perspective(1px); */
 }
 	
 

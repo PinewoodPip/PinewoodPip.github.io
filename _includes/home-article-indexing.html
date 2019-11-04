@@ -1,6 +1,7 @@
 <article>
     <!-- POST FEATURED IMAGE -->
     <div style="display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: stretch; height: 222px; flex-shrink: 1">
+        {% if post.featured-image != nil %}
         <div class="post-preview-image-container" style="position: relative;">
             <a href="{{ site.url }}{{ post.url }}" class="post-preview-image-link">
                 <img src="{{ post.featured-image}}" class="post-preview-image">
@@ -11,6 +12,10 @@
             </div>
             {% endif %}
         </div>
+        {% else %} <!-- quick hack to support posts with no featured image -->
+        <div class="post-preview-image-container" style="position: relative; visibility: hidden;">
+        </div>
+        {% endif %}
 
         <!-- POST TITLE -->
         <header style="width: 50%;">

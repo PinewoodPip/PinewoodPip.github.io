@@ -13,6 +13,8 @@ play-now-text: Play now!
 project-desc: A simple soccer simulation game which aims to streamline matches through abstraction to create exciting gameplay where everyone, even losers, are winners.
 ---
 
+*Note: mobile devices are not supported; the game won't work on them.*
+
 ### A simple soccer simulation game which aims to streamline matches through abstraction to create exciting gameplay where everyone, even losers, are winners.
 
 This is an updated version of the original release of the game from 2015, which was a 1-day project made with 0 prior experience of web or game development. You can read more about its history [here.](https://pinewood.team/posts/2019-11-04/awesome-soccer-origins.html)

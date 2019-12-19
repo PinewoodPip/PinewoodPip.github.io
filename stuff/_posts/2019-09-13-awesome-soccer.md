@@ -14,6 +14,7 @@ project-desc: A simple soccer simulation game which aims to streamline matches t
 ---
 
 *Note: mobile devices are not supported; the game won't work on them.*
+*Note 2: only works on Google Chrome for now, sorry. We'll try to fix it on other browsers when we release the combat update.*
 
 ### A simple soccer simulation game which aims to streamline matches through abstraction to create exciting gameplay where everyone, even losers, are winners.
 

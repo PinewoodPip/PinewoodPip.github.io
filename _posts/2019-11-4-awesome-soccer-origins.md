@@ -33,7 +33,7 @@ I swapped the game from TKinter (the default interface module for Python) to Pyg
 ![](/images/posts/awesome-soccer-origins/turn-based-combat.PNG)
 <p class="centered-text"><i>Combat in progress. That version of the game even had a small <a href="/images/posts/awesome-soccer-origins/skill-tree.png">skill tree.</a></i></p>
 
-The adventure mode's development got quite far, until I realised that it was too ambitious and detached from the core idea of the game (the 50/50 soccer "matches). I stopped working on it after winter to get into Unity (and worked on The Siege of Kaerwood, our second game).
+The adventure mode's development got quite far, until I realised that it was too ambitious and detached from the core idea of the game (the 50/50 soccer "matches"). I stopped working on it after winter to get into Unity (and worked on The Siege of Kaerwood, our second game).
 
 For the next few months the game was in a limbo. I have always wanted to update the 2015 browser version, but didn't have the skills to do so until summer of 2019. This new browser version was made in 1-2 weeks at the end of August, and also lead to the creation of our website.
 

@@ -35,10 +35,10 @@
 
             <!-- MAIN -->
             <h1 class="entry-title centered-text">
-                <a>{{ page.title }}</a>
+                <a>{{ page.type | capitalize }} for {{ page.product-fancy }}: {{ page.title }} - {{ page.version }}</a>
             </h1>
             <h3 class="entry-subtitle">
-                <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ page.subtitle }}</a>
+                <p>(Released {{ page.date | date: "%d/%m/%y" }}) - {{ page.short-desc }}</p>
             </h3>
 
             <hr>
@@ -48,24 +48,6 @@
             <div style="text-align: center">
                 <a href="{{ page.play-now-link }}" style="color: blue">{{page.play-now-text}}</a>
             </div>
-            {% endif %}
-
-            <!-- PATCHNOTES -->
-            {% if page.patchnotes-id != nil %}
-                {% assign sorted = site.patchnotes | reverse %}
-                {% for item in sorted %}
-                    {% if item.product == page.patchnotes-id %}
-                    <div class="patchnotes-box">
-                        <img class="patchnotes-icon patchnotes-inner" src="/assets/images/patchnote.svg">
-                        <div class="patchnotes-text-area patchnotes-inner">
-                            <a class="patchnotes-title like-p" href="{{ item.url }}"><b>Latest {{ item.type }}: {{ item.title }} - {{ item.version }}</b></a>
-                            <hr class="patchnotes-hr">
-                            <p>{{ item.short-desc }}</p>
-                        </div>
-                    </div>
-                    {% break %}
-                    {% endif %}
-                {% endfor %}
             {% endif %}
 
             <!-- POST CONTENT -->

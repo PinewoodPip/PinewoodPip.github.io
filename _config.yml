@@ -30,6 +30,13 @@ paginate: 5
 #  toc_levels: 1..6
 #  enable_coderay: false
 
+# collections_dir: collections
+collections:
+  patchnotes:
+    output: true
+    sort_by: date
+    permalink: /patchnotes/:name
+
 include:
   - .htaccess
 

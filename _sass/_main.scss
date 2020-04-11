@@ -1,4 +1,53 @@
+/*---  PATCHNOTES ----------------------------------*/
+.patchnotes-box {
+	border: 1px solid grey;
+	height: 120px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.patchnotes-homepage-article {
+	background-color: transparent !important;
+	padding-bottom: 0 !important;
+	box-shadow: none !important;
+}
+
+.patchnotes-inner {
+	margin: 10px;
+}
+
+.patchnotes-icon {
+	height: 70%;
+}
+
+.patchnotes-text-area {
+	width: 100%;
+}
+
+.patchnotes-title {
+	font-size: 120%;
+}
+
+.patchnotes-hr {
+	margin-top: -10px;
+	margin-bottom: -10px;
+	width: 100%;
+}
+
 /*---  PIP -----------------------------------------*/
+.like-p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .nav-bg {
 	background-color: $body-color;
 	height: 35px;

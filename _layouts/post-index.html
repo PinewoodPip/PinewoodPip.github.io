@@ -27,6 +27,21 @@
 
     <!-- MAIN -->
     <div id="main" role="main">
+        <!-- PATCHNOTES -->
+        <article class="patchnotes-homepage-article">
+            {% assign sorted = site.patchnotes | reverse %}
+            {% for item in sorted %}
+            <div class="patchnotes-box">
+                <img class="patchnotes-icon patchnotes-inner" src="/assets/images/patchnote.svg">
+                <div class="patchnotes-text-area patchnotes-inner">
+                    <a class="patchnotes-title like-p" href="{{ item.url }}"><b>Latest {{ item.type }} for {{ item.product-fancy }}: {{ item.title }} - {{ item.version }}</b></a>
+                    <hr class="patchnotes-hr">
+                    <p>(Released {{ item.date | date: "%d/%m/%y" }}) - {{ item.short-desc }}</p>
+                </div>
+            </div>
+            {% break %}
+        {% endfor %}
+        </article>
       {{ content }}
     </div>
 </body>

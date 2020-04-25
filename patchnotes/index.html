@@ -1,0 +1,11 @@
+---
+layout: patchnotes-index
+permalink: /patchnotes/index.html
+---
+<article class="stuff-info-panel" style="margin-bottom: 5px; background-color: lightgreen; padding: 8px;">
+    <p style="display: block; font-size: 25px; text-align: center; margin: 0px; color: darkgreen;">Awesome Soccer</p>
+</article>
+{% assign sorted = site.patchnotes | reverse %}
+{% for patchnote in sorted %}
+    {% include patchnotes-box.html patchnote=patchnote %}
+{% endfor %}

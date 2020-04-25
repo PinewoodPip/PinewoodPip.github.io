@@ -1,0 +1,9 @@
+<!-- PATCHNOTES BOX -->
+<div class="patchnotes-box">
+    <img class="patchnotes-icon patchnotes-inner" src="/assets/images/patchnote.svg">
+    <div class="patchnotes-text-area patchnotes-inner">
+        <a class="patchnotes-title like-p" href="{{ patchnote.url }}"><b>{{ patchnote.type | capitalize }}: {{ patchnote.title }} - {{ patchnote.version }} - {{ patchnote.date | date: "%d/%m/%y" }}</b></a>
+        <hr class="patchnotes-hr">
+        <p>{{ patchnote.short-desc }}</p>
+    </div>
+</div>

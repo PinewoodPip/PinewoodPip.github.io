@@ -6,7 +6,7 @@ type: update
 title: 'The Combat Update 2: REAWAKENING'
 short-desc: Major content & polishing update
 version: v0.7.0
-date: 2020-09-24
+date: 2020-09-26
 ---
 
 Okay, you've seen the combat update, but are you ready to see it again?

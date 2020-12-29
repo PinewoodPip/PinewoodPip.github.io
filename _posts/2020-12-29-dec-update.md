@@ -63,7 +63,7 @@ Which makes it quite a big deal! It's highly useful, relatively pretty and polis
 
 Development of it started in the last week of October, after a conversation with one of the mod's devs where he motivated me to pursue this vague idea I've had in my mind for a while.
 
-![](/images/posts/dec-20/awesome_soccer.png)
+![](/images/posts/dec-20/tooltip.png)
 <p class="centered-text"><i>Pretty tooltips!</i></p>
 
 I spent the first week creating multiple python scripts to parse all the necessary game data, which strengthened my regex skills and understanding of the game engine. By the end of the second week, I had a nice, functional prototype that I showed off to the community, which gathered a lot of interest. It got me very motivated.

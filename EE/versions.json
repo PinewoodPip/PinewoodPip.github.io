@@ -1,0 +1,30 @@
+{
+    "Mods":
+    {
+        "EpipEncounters":
+        {
+            "Version": "1056",
+            "Date": "22/07/22"
+        },
+        "Derpy":
+        {
+            "Version": "230",
+            "Date": "24/07/22"
+        },
+        "EE_Core":
+        {
+            "Version": "1339",
+            "Date": "22/7/22"
+        },
+        "EE_Origins":
+        {
+            "Version": "1065",
+            "Date": "22/7/22"
+        },
+        "EpicEncounters":
+        {
+            "Version": "144",
+            "Date": "22/7/22"
+        }
+    }
+}

@@ -3,18 +3,18 @@
     {
         "EpipEncounters":
         {
-            "Version": "1062",
-            "Date": "16/09/2022"
+            "Version": "1063",
+            "Date": "19/09/2022"
         },
         "Derpy":
         {
-            "Version": "240",
-            "Date": "5/09/2022"
+            "Version": "241",
+            "Date": "19/09/2022"
         },
         "EE_Core":
         {
-            "Version": "1339",
-            "Date": "22/7/2022"
+            "Version": "1344",
+            "Date": "18/09/2022"
         },
         "EE_Origins":
         {
@@ -23,8 +23,8 @@
         },
         "EpicEncounters":
         {
-            "Version": "144",
-            "Date": "22/7/2022"
+            "Version": "149",
+            "Date": "18/09/2022"
         }
     }
 }

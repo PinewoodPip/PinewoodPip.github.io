@@ -1,0 +1,13 @@
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.DOS2_TEST_PAT }}
+          repository: MPihlap/PinewoodPip.github.io
+          event-type: update_versions

@@ -1,0 +1,43 @@
+on:
+  repository_dispatch:
+    types: update_versions
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v3
+      - name: Make Request
+        id: myRequest
+        uses: satak/webrequest-action@master
+        with:
+          url: "https://raw.githubusercontent.com/MPihlap/DOS2-Mod-Versions/main/versions.json"
+          method: GET
+      - name: Show response
+        run: |
+          echo "${{ toJSON(fromJSON(steps.myRequest.outputs.output).data) }}" #> EE/versions.json
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@v1.2.1
+        with:
+          name: "EE/versions.json"
+          json: ${{ toJSON(fromJSON(steps.myRequest.outputs.output).data) }}
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+
+          # The name of the user that will be displayed as the author of the commit.
+          # Default: depends on the default_author input
+          author_name: Braccus Rex
+
+          # The email of the user that will be displayed as the author of the commit.
+          # Default: depends on the default_author input
+          author_email: braccus@source.com
+
+          # Arguments for the git fetch command. If set to false, the action won't fetch the repo.
+          # For more info as to why fetching is usually recommended, please see the "Performance on large repos" FAQ. 
+          # Default: --tags --force
+          fetch: false
+
+          # The message for the commit.
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: 'Auto-updated versions.json'

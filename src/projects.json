@@ -1,0 +1,48 @@
+{
+    "Main": [
+      {
+        "Name": "Epip",
+        "Description": "Large UI & QoL mod for Divinity: Original Sin 2 with an extensive feature set and configurability, made with Norbyte's Script Extender",
+        "RelativeLink": "/epip/"
+      },
+      {
+        "Name": "Ep1p",
+        "Description": "UI & QoL mod for Divinity: Original Sin 1 made with DLL injection and reverse-engineering",
+        "RelativeLink": "/ep1p/"
+      }
+    ],
+    "Resources": [
+      {
+        "Name": "Epic Encounters 2 Build Planner",
+        "Description": "CRPG build planner web app for Epic Encounters 2",
+        "RelativeLink": "/ee2buildplanner/"
+      },
+      {
+        "Name": "Divinity Skill Viewer",
+        "Description": "Skill browser web app for various Divinity: Original Sin 2 overhauls",
+        "RelativeLink": "/skillviewer/"
+      },
+      {
+        "Name": "Epic Encounters 2 Ascension Helper",
+        "Description": "Web app to brute-force optimal Ascension paths for Epic Encounters 2",
+        "RelativeLink": "/ee2calc/"
+      },
+      {
+        "Name": "Epic Encounters 2 Gear Modifiers List",
+        "Description": "Web app with a filterable list of equipment attributes in Epic Encounters 2",
+        "RelativeLink": "/ee2gearmods/"
+      }
+    ],
+    "Other": [
+      {
+        "Name": "Lazy Galaxy 2",
+        "Description": "Incremental/clicker game I worked on as the gameplay programmer",
+        "Link": "https://store.steampowered.com/app/1477950/Lazy_Galaxy_2/"
+      },
+      {
+        "Name": "KF3 Tweaks",
+        "Description": "QoL & graphics improvement mod for the Kemono Friends 3 mobile game",
+        "Link": "https://github.io/pinewoodpip/kf3tweaks"
+      }
+    ]
+}

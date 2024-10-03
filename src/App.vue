@@ -6,12 +6,15 @@ import Footer from './components/Footer.vue'
 <template>
   <div class="header-bg">
     <div class="logo-container d-flex flex-column">
-      <div class="mx-auto my-auto d-flex justify-content-center">
-        <img class="logo" src="./assets/pinewood_rhombe_purple.svg"/>
-        <div class="mx-2"></div>
-        <h1 class="my-auto">Team Pinewood</h1>
+      <div class="mx-auto my-auto">
+        <!-- Logo and title -->
+        <div class="d-flex justify-content-center">
+          <img class="logo" src="./assets/pinewood_rhombe_purple.svg"/>
+          <div class="mx-2"></div>
+          <h1 class="my-auto">Team Pinewood</h1>
+        </div>
+        <p class="subtitle"><i>Niche software for niche people</i></p>
       </div>
-      <p><i>Niche software for niche people</i></p>
     </div>
   </div>
   <Projects class="mx-auto"/>
@@ -38,11 +41,20 @@ import Footer from './components/Footer.vue'
 .logo {
   max-height: 5em;
 }
-.logo-container > p {
+.subtitle {
   opacity: 50%;
-  margin-top: -30px;
+  /* margin-top: -30px; */
 }
 h1 {
   color: #8576de;
+}
+/* Downsize logo and title on mobile resolutions */
+@media only screen and (max-width: 600px) {
+  .logo {
+    max-height: 4em;
+  }
+  h1 {
+    font-size: 2em;
+  }
 }
 </style>

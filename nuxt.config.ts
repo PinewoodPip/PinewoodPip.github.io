@@ -7,5 +7,16 @@ export default defineNuxtConfig({
     dataValue: 'theme', // activate data-theme in <html> tag
     classSuffix: '',
   },
-  tailwindcss: { exposeConfig: true }
+  tailwindcss: { exposeConfig: true },
+  app: {
+    head: {
+      title: 'Team Pinewood',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      ]
+    }
+  }
 })

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero bg-base-200 rounded-lg">
+  <div class="hero bg-base-200 rounded-lg self-stretch">
     <div class="hero-content flex-col items-start lg:flex-row p-0 gap-0">
       <!-- Description & links -->
       <div class="flex flex-col gap-y-3 p-5 flex-grow basis-0 self-stretch">

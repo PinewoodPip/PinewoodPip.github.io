@@ -24,6 +24,7 @@
         <p>I'm Pip, a software engineer with experience in game development and an avid modder.<br/>I mostly make mods for Larian Studios games, but I enjoy programming in general and also dabble in full-stack development and reverse-engineering.</p>
         <div class="flex gap-x-3">
           <a class="btn btn-primary" href="https://github.com/PinewoodPip">GitHub</a>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/kamil-natan-malysa/">LinkedIn</a>
         </div>
       </div>
     </div>

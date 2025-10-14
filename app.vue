@@ -25,6 +25,7 @@
         <div class="flex gap-x-3">
           <a class="btn btn-primary" href="https://github.com/PinewoodPip">GitHub</a>
           <a class="btn btn-primary" href="https://www.linkedin.com/in/kamil-natan-malysa/">LinkedIn</a>
+          <a class="btn btn-primary" href="mailto:pip@pinewood.team">pip@pinewood.team</a>
         </div>
       </div>
     </div>

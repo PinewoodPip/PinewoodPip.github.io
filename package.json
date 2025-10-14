@@ -14,6 +14,7 @@
     "@nuxtjs/tailwindcss": "latest",
     "daisyui": "latest",
     "nuxt": "latest",
+    "vue-icons-plus": "^0.1.8",
     "vue3-carousel": "^0.16.0"
   }
 }

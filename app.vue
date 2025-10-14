@@ -23,9 +23,9 @@
       <div class="flex flex-col gap-y-3">
         <p>I'm Pip, a software engineer with experience in game development and an avid modder.<br/>I mostly make mods for Larian Studios games, but I enjoy programming in general and also dabble in full-stack development and reverse-engineering.</p>
         <div class="flex gap-x-3">
-          <a class="btn btn-primary" href="https://github.com/PinewoodPip">GitHub</a>
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/kamil-natan-malysa/">LinkedIn</a>
-          <a class="btn btn-primary" href="mailto:pip@pinewood.team">pip@pinewood.team</a>
+          <a class="btn btn-primary" href="https://github.com/PinewoodPip"><Fa6Github class="size-6" /> GitHub</a>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/kamil-natan-malysa/"><Fa6Linkedin class="size-6" /> LinkedIn</a>
+          <a class="btn btn-primary" href="mailto:pip@pinewood.team"><Fa6Envelope class="size-6" /> pip@pinewood.team</a>
         </div>
       </div>
     </div>
@@ -42,6 +42,7 @@
 import { _themes as daisyThemes } from '#tailwind-config/daisyui'
 import Projects from '../components/Projects.vue'
 import Footer from '../components/Footer.vue'
+import { Fa6Github, Fa6Linkedin, Fa6Envelope } from "vue-icons-plus/fa6";
 // import { useColorMode } from '@vueuse/core'
 
 // const colorMode = useColorMode();
